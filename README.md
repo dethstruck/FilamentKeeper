@@ -34,4 +34,13 @@ Ideal para makers, pequenas oficinas e laboratórios, o sistema permite cadastra
 1. Clone este repositório:  
    ```bash
    git clone https://github.com/dethstruck/filamentKeeper.git
-   cd filamentKeeper
+   cd FilamentKeeper
+   ```
+2. Instale as dependências:
+   ```bash  
+   pip install -r requirements.txt
+   ```
+3. Execute o projeto:
+   ```
+   python main.py
+   ```
