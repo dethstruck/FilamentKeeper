@@ -148,7 +148,7 @@ def opt4():
 
 def opt5():
     menuDisplay("Sobre")
-    print("Projeto desenvolvido por: "+Fore.GREEN+"Gustavo Hirota\n"+Fore.WHITE+"\n")
+    print("Projeto desenvolvido por: "+Fore.GREEN+"Gustavo Hirota\n"+Fore.WHITE)
     print("Github: "+Fore.GREEN+"https://github.com/dethstruck"+Fore.WHITE+"\n")
     pause()
     main()
@@ -160,7 +160,7 @@ def opt6():
 def main():
     opt = 0
     menuDisplay("Gerenciamento de impressora 3D")
-    print("Operações:\n"+Fore.RED+"1. "+Fore.WHITE+"Registrar filamento no estoque\n"+Fore.RED+"2. "+Fore.WHITE+"Registrar impressão\n"+Fore.RED+"3. "+Fore.WHITE+"Acessar estoque\n"+Fore.RED+"4. "+Fore.WHITE+"Configurações\n"+Fore.RED+"6. "+Fore.WHITE+"Sair\n")
+    print("Operações:\n"+Fore.RED+"1. "+Fore.WHITE+"Registrar filamento no estoque\n"+Fore.RED+"2. "+Fore.WHITE+"Registrar impressão\n"+Fore.RED+"3. "+Fore.WHITE+"Acessar estoque\n"+Fore.RED+"4. "+Fore.WHITE+"Configurações\n"+Fore.RED+"5. "+Fore.WHITE+"Sobre\n"+Fore.RED+"6. "+Fore.WHITE+"Sair\n")
     opt = int(input("Digite a opção: "))
     if opt == 1:
         opt1()
