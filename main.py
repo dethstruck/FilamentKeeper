@@ -1,4 +1,4 @@
-import os
+import os, platform
 from tinydb import TinyDB, Query
 from colorama import Fore, Back, Style
 
@@ -8,19 +8,25 @@ Estoque = Query()
 
 
 # Initial Setup
-os.system("title Gerenciamento de estoque para impressora 3D")
+if platform.system() == "Windows":
+    os.system("title Gerenciamento de estoque para impressora 3D")
+    
 if not config.search(Query().cepm.exists()):
     config.insert({'cepm': 0.0025})
 else:
     cepm = config.search(Query().cepm.exists())[0]['cepm']
 
-
+def clear():
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
 
 def pause():
     input("Pressione ENTER para continuar...")
 
 def menuDisplay(name, length=10):
-    os.system('cls')
+    clear()
     line = "=" * length
     print(f"{line}> "+Fore.RED+f"{name}"+Fore.WHITE+f" <{line}\n")
 
